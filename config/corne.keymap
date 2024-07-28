@@ -85,10 +85,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans    &kp EXCLAMATION  &kp AT_SIGN  &kp POUND   &kp DOLLAR   &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
-&kp CAPS  &kp N1           &kp N2       &kp N3      &kp N4       &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp EQUAL
-&trans    &kp RBKT         &kp K_CUT    &kp K_COPY  &kp K_PASTE  &to 8          &kp MINUS  &kp GRAVE      &kp LBKT      &kp RBKT              &kp BSLH               &trans
-                                        &trans      &mo 1        &trans         &kp DEL    &mo 2          &kp RALT
+&trans    &kp EXCLAMATION  &kp AT_SIGN  &kp POUND       &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
+&kp CAPS  &kp N1           &kp N2       &kp N3          &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp EQUAL
+&trans    &kp RBKT         &kp LC(X)    &kp LC(K_COPY)  &kp LC(V)   &to 8          &kp MINUS  &kp GRAVE      &kp LBKT      &kp RBKT              &kp BSLH               &trans
+                                        &trans          &mo 1       &trans         &kp DEL    &mo 2          &kp RALT
             >;
         };
 
@@ -127,10 +127,10 @@
 
         layer_1_mac {
             bindings = <
-&trans    &kp EXCLAMATION  &kp AT_SIGN  &kp POUND   &kp DOLLAR   &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
-&kp CAPS  &kp N1           &kp N2       &kp N3      &kp N4       &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp EQUAL
-&trans    &kp RBKT         &kp K_CUT    &kp K_COPY  &kp K_PASTE  &to 8          &kp MINUS  &kp GRAVE      &kp LBKT      &kp RBKT              &kp BSLH               &trans
-                                        &trans      &mo 1        &trans         &kp DEL    &mo 2          &kp RALT
+&trans    &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
+&kp CAPS  &kp N1           &kp N2       &kp N3     &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp EQUAL
+&trans    &kp RBKT         &kp LG(X)    &kp LG(C)  &kp LG(V)   &to 8          &kp MINUS  &kp GRAVE      &kp LBKT      &kp RBKT              &kp BSLH               &trans
+                                        &trans     &mo 1       &trans         &kp DEL    &mo 2          &kp RALT
             >;
         };
 
