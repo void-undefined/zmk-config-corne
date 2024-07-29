@@ -25,7 +25,7 @@
         };
 
         to_system {
-            bindings = <&to 8>;
+            bindings = <&tog 8>;
             key-positions = <34 35>;
         };
     };
