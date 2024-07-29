@@ -87,7 +87,7 @@
             bindings = <
 &trans    &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
 &kp CAPS  &kp N1           &kp N2       &kp N3     &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp EQUAL
-&trans    &kp RBKT         &kp LC(X)    &kp LC(C)  &kp LC(V)   &to 8          &kp MINUS  &kp GRAVE      &kp LBKT      &kp RBKT              &kp BSLH               &trans
+&trans    &kp RBKT         &kp LC(X)    &kp LC(C)  &kp LC(V)   &tog 8         &kp MINUS  &kp GRAVE      &kp LBKT      &kp RBKT              &kp BSLH               &trans
                                         &trans     &mo 1       &trans         &kp DEL    &mo 2          &kp RALT
             >;
         };
@@ -121,7 +121,7 @@
 &kp TAB       &hrm LC(SPACE) Q  &hrm LC(UP_ARROW) W  &kp E        &kp R           &hrm LG(S) T    &hrm LS(LG(N5)) Y  &kp U              &kp I            &kp O           &kp P           &kp LEFT_BRACKET
 &kp LEFT_GUI  &mt LCTRL A       &mt LEFT_ALT S       &mt LCTRL D  &mt LEFT_GUI F  &kp G           &kp H              &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt LEFT_ALT L  &mt RCTRL SEMI  &kp SQT
 &kp LSHFT     &kp Z             &kp X                &kp C        &kp V           &kp B           &kp N              &kp M              &kp COMMA        &kp DOT         &kp FSLH        &kp ENTER
-                                                     &kp LCTRL    &mo 1           &kp SPACE       &kp BACKSPACE      &mo 2              &kp RMETA
+                                                     &kp LCTRL    &mo 5           &kp SPACE       &kp BACKSPACE      &mo 6              &kp RMETA
             >;
         };
 
@@ -129,8 +129,8 @@
             bindings = <
 &trans    &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
 &kp CAPS  &kp N1           &kp N2       &kp N3     &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp EQUAL
-&trans    &kp RBKT         &kp LG(X)    &kp LG(C)  &kp LG(V)   &to 8          &kp MINUS  &kp GRAVE      &kp LBKT      &kp RBKT              &kp BSLH               &trans
-                                        &trans     &mo 1       &trans         &kp DEL    &mo 2          &kp RALT
+&trans    &kp RBKT         &kp LG(X)    &kp LG(C)  &kp LG(V)   &tog 8         &kp MINUS  &kp GRAVE      &kp LBKT      &kp RBKT              &kp BSLH               &trans
+                                        &trans     &mo 5       &trans         &kp DEL    &mo 6          &kp RALT
             >;
         };
 
@@ -156,7 +156,7 @@
             bindings = <
 &kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&trans      &trans        &trans        &trans        &to 0         &to 4           &trans    &trans    &trans    &trans     &to 0   &to 4
+&trans      &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &tog 0  &tog 4
                                         &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
             >;
         };
@@ -168,6 +168,11 @@
         Layer3 {
             if-layers = <1 2>;
             then-layer = <3>;
+        };
+
+        Layer_3_mac {
+            if-layers = <5 6>;
+            then-layer = <7>;
         };
     };
 };
