@@ -35,6 +35,26 @@
             key-positions = <35 33>;
             layers = <0 4>;
         };
+
+        win_layer {
+            bindings = <&tog 0>;
+            key-positions = <35 6>;
+        };
+
+        mac_layer {
+            bindings = <&tog 4>;
+            key-positions = <35 7>;
+        };
+
+        gaming_layer {
+            bindings = <&tog 9>;
+            key-positions = <35 8>;
+        };
+
+        system_layer {
+            bindings = <&tog 8>;
+            key-positions = <11 35>;
+        };
     };
 
     behaviors {
@@ -165,6 +185,24 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &tog 4
                                         &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+            >;
+        };
+
+        gaming_1 {
+            bindings = <
+&kp ESCAPE  &kp Q  &kp W  &kp E         &kp R   &kp T        &kp Y          &kp U   &kp I      &kp O    &kp P     &kp LEFT_BRACKET
+&kp TAB     &kp A  &kp S  &kp D         &kp F   &kp G        &kp H          &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT   &kp Z  &kp X  &kp C         &kp V   &kp B        &kp N          &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
+                          &kp LEFT_ALT  &mo 10  &kp SPACE    &kp BACKSPACE  &trans  &kp RMETA
+            >;
+        };
+
+        gaming_2 {
+            bindings = <
+&trans     &kp EXCLAMATION  &kp AT_SIGN  &kp POUND     &kp DOLLAR    &kp PERCENT     &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
+&trans     &kp N1           &kp N2       &kp N3        &kp N4        &kp N5          &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp EQUAL
+&kp LCTRL  &kp NUMBER_6     &kp N7       &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &kp MINUS  &kp GRAVE      &kp LBKT      &kp RBKT              &kp BSLH               &trans
+                                         &trans        &mo 10        &trans          &kp DEL    &trans         &kp RALT
             >;
         };
     };
